@@ -25,8 +25,7 @@ body{
 
 header section#he1{
     color: white;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 80%);
     display: flex;
     justify-content: end;
     img{
@@ -36,12 +35,15 @@ header section#he1{
 
 nav#nav1 ul{
     list-style: none;
+    background-color: rgba(173, 216, 230, 0.8);
 }
 
 nav#nav1 ul li{
     display: inline;
+    
     a{
     font-family: Tahoma, Verdana;
     font-size: 1.2rem;
+
     }
 }
