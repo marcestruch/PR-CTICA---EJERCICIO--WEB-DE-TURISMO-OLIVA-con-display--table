@@ -4,16 +4,16 @@
     margin: 0;padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    border: 1px inset red;
 }
 
 :root{
-    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("/img/background.jpg");
-    background-size:cover;
     background-repeat: no-repeat;
-
+    background-size:cover;
+    background-position: center;
+    font-size: 16px;
+    min-height: auto;
 }
 
 body{
@@ -25,25 +25,170 @@ body{
 
 header section#he1{
     color: white;
-    background-color: rgba(0, 0, 0, 80%);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: end;
+    padding: 10px;
     img{
         width: 80px;
+        margin-left: 10px;
     }
 }
 
 nav#nav1 ul{
     list-style: none;
     background-color: rgba(173, 216, 230, 0.8);
+    padding: 10px;
 }
 
 nav#nav1 ul li{
     display: inline;
-    
+    margin: 0 20px;
     a{
-    font-family: Tahoma, Verdana;
-    font-size: 1.2rem;
-
+       font-family: Tahoma, Verdana, sans-serif;
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        padding: 5px 10px;
     }
+}
+
+nav#nav1 a:hover {
+    background-color: red;
+    color: white;
+}
+
+
+main h1 {
+    color: green;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-bottom: 5px solid green;
+}
+
+#table-container {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#nav2 {
+    display: table-cell;
+    width: 20%;
+    min-width: 150px;
+    max-width: 250px;
+    background-color: lightblue;
+    padding: 15px;
+    vertical-align: top;
+}
+
+#nav2 ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#nav2 > ul > li {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#nav2 ul ul {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#nav2 ul ul li {
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+#nav2 li {
+    color: black;
+    text-decoration: none;
+}
+
+#nav2 li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+article {
+    display: table-cell;
+    width: 80%;
+    padding: 15px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+article h2 {
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+#content-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+table {
+    border-collapse: collapse;
+    flex: 1;
+    min-width: 300px;
+}
+
+table, th, td {
+    border: 1px dotted red;
+    padding: 10px;
+}
+
+td:first-child {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    width: 30%;
+}
+
+#table-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+#table-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+#footer-top {
+    color: gray;
+    background-color: lightgrey;
+    font-size: small;
+    font-style: italic;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+#footer-bottom {
+    height: 120px;
+    background-color: darkgrey;
+    background-image: url('/img/silueta.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+    text-align: right;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#footer-bottom img {
+    height: 30px;
+    width: auto;
 }
